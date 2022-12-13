@@ -1,0 +1,34 @@
+{
+	"variables": {
+		"client_id": "61591e2b-5d7f-42dd-b6d8-71eed1018960", 
+		"client_secret": "yyA8Q~IhtRtnfkyPcONn6~P5e9LVgdnrSlV0Jduw", 
+		"tenant_id": "f958e84a-92b8-439f-a62d-4f45996b6d07",
+		"subscription_id": "d63f8116-7a20-4117-80f3-6b57296b37a5"
+	},
+	"builders": [{
+		"type":"azure-arm",
+		"client_id": "61591e2b-5d7f-42dd-b6d8-71eed1018960", 
+		"client_secret": "yyA8Q~IhtRtnfkyPcONn6~P5e9LVgdnrSlV0Jduw", 
+		"tenant_id": "f958e84a-92b8-439f-a62d-4f45996b6d07",
+		"subscription_id": "d63f8116-7a20-4117-80f3-6b57296b37a5",
+		"os_type":"Linux",
+		"image_publisher":"Canonical",
+		"image_offer":"UbuntuServer",
+		"image_sku":"18.04-LTS",
+		"managed_image_resource_group_name":"Azuredevops",
+		"managed_image_name":"udacity-myPackerImage",
+		"azure_tags": {
+			"environment":"project3"
+		},
+		"location":"East US",
+		"vm_size":"Standard_D2s_v3"
+	}],
+	"provisioners": [{
+		"type": "shell",
+		"inline": [
+			"sudo apt update",
+			"sudo apt install apache2 -y",
+			"sudo bash -c 'echo Hello, World! > /var/www/html/index.html'"
+		]
+	}]
+}
