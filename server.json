@@ -1,16 +1,16 @@
 {
 	"variables": {
-		"client_id": "61591e2b-5d7f-42dd-b6d8-71eed1018960", 
-		"client_secret": "yyA8Q~IhtRtnfkyPcONn6~P5e9LVgdnrSlV0Jduw", 
+		"client_id": "a1b0e96e-fd0e-441c-8945-0a4c23d2c1d5", 
+		"client_secret": "rm18Q~uyosiTHYK8~2Gn8BxR3nd6gZpxnzSVraRG", 
 		"tenant_id": "f958e84a-92b8-439f-a62d-4f45996b6d07",
-		"subscription_id": "d63f8116-7a20-4117-80f3-6b57296b37a5"
+		"subscription_id": "d9713790-b1a8-4aba-a040-f0c0e1b93efa"
 	},
 	"builders": [{
 		"type":"azure-arm",
-		"client_id": "61591e2b-5d7f-42dd-b6d8-71eed1018960", 
-		"client_secret": "yyA8Q~IhtRtnfkyPcONn6~P5e9LVgdnrSlV0Jduw", 
+		"client_id": "a1b0e96e-fd0e-441c-8945-0a4c23d2c1d5", 
+		"client_secret": "rm18Q~uyosiTHYK8~2Gn8BxR3nd6gZpxnzSVraRG", 
 		"tenant_id": "f958e84a-92b8-439f-a62d-4f45996b6d07",
-		"subscription_id": "d63f8116-7a20-4117-80f3-6b57296b37a5",
+		"subscription_id": "d9713790-b1a8-4aba-a040-f0c0e1b93efa",
 		"os_type":"Linux",
 		"image_publisher":"Canonical",
 		"image_offer":"UbuntuServer",
